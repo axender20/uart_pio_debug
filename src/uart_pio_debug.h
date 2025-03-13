@@ -4,7 +4,7 @@
 
 #include "SerialPIO.h"
 
-#ifdef DEBUG_ENABLE
+#ifdef SPIO_DEBUG_ENABLE
 void uart_pio_init_debug();
 extern SerialPIO uart_pio_debug;
 

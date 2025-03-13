@@ -5,7 +5,7 @@
   "keywords": "DEBUG_INIT, DEBUG_PRINT, DEBUG_PRINTLN",
   "repository": {
       "type": "git",
-      "url": ""
+      "url": "https://github.com/axender20/uart_pio_debug.git"
   },
   "authors": [
       {

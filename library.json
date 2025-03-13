@@ -1,0 +1,20 @@
+{
+  "name": "uart_pio_debug",
+  "version": "1.0.0",
+  "description": "DEBUG based on uart SerialPio",
+  "keywords": "DEBUG_INIT, DEBUG_PRINT, DEBUG_PRINTLN",
+  "repository": {
+      "type": "git",
+      "url": ""
+  },
+  "authors": [
+      {
+          "name": "axender20",
+          "email": "alexander00vasquez@gmail.com",
+          "maintainer": true
+      }
+  ],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "https://github.com/maxgerhardt/platform-raspberrypi.git"
+}

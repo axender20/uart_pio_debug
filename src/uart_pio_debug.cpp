@@ -23,4 +23,13 @@ SerialPIO uart_pio_debug(SPIO_DEBUG_TX, SPIO_DEBUG_RX, uart_pio_debug_default_fi
 void uart_pio_init_debug() {
   uart_pio_debug.begin(SPIO_DEBUG_SPEED);
 }
+
+extern "C" {
+  int __attribute__((weak)) _write_r(struct _reent* r, int fd, const char* buf, size_t count) {
+    (void)r; // Evita advertencia de variable no usada
+    uart_pio_debug.write((const uint8_t*)buf, count);
+    return count;
+  }
+}
+
 #endif
